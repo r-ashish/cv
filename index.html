@@ -1,1 +1,468 @@
 
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My CV</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Generator" content="CV Maker - https://cvmkr.com/" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		body {
+			background: #f0f0f0;
+			margin: 0;
+			padding: 0;
+
+			font-family: 'Roboto', Helvetica, Arial;
+			line-height: 24px;
+			font-size: 16px;
+			font-weight: 400;
+
+			color: #222;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4 {
+			margin: 0 0 15px 0;
+			padding: 0;
+			font-weight: 700;
+		}
+
+		h1 {
+			font-size: 300%;
+		}
+
+		h2 {
+			font-size: 210%;
+		}
+
+		h3 {
+			font-size: 130%;
+		}
+
+		p {
+			margin: 0 0 10px 0;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0 0 0 10px;
+			list-style-type: square;
+		}
+
+		a {
+			color: #222;
+		}
+
+		/* ________________________________________________________ */
+
+		.clear {
+			clear: both;
+		}
+
+		#main {
+			background: #fff;
+			width: 900px;
+			padding: 35px;
+			margin: 0 auto 15px auto;
+			overflow: hidden;
+
+			/*box-shadow: 0 0 6px #ccc;*/
+		}
+
+		#title {
+			line-height: 46px;
+		}
+
+		#title .c {
+			display: block;
+		}
+
+		#title .email {
+			font-size: 20px;
+			font-weight: 100;
+			/* display: block; */
+			line-height: 30px;
+		}
+
+		.link.fa {
+			margin-left: 10px;
+		}
+
+		.email.phone {
+			line-height: 20px !important;
+			margin-top: 0;
+		}
+
+		#credit {
+			margin-bottom: 20px;
+			font-size: 11px;
+			color: #999;
+			text-align: center;
+		}
+
+		#credit a {
+			color: #999;
+		}
+
+		p label {
+			font-weight: 500;
+			font-size: 110%;
+			margin-right: 10px;
+		}
+
+		p label span.colon {
+			display: inline;
+		}
+
+		p.sub {
+			margin: 5px 0;
+		}
+
+		.item {
+			margin: 0 0 20px 0;
+		}
+	
+		.section {
+			/* border-bottom: 1px solid #222; */
+			margin-bottom: 30px;
+		}
+
+		.section .title {
+			border-bottom: 1px solid #222;
+			/* float: left; */
+			font-size: 25px;
+			line-height: 32px;
+			font-weight: 500;
+			word-wrap: break-word;
+			width: 100%;
+			margin: 20px 20px 20px 0;
+			font-weight: 700;
+		}
+
+		.section .set {
+			/* padding: 0 20px; */
+			/* float: left; */
+			/* width: 68%; */
+		}
+
+		.section .set ul {
+			padding: 0 25px;
+		}
+
+		.section .set h3 {
+			margin: 0;
+		}
+
+		.section span.value {
+			display: block;
+		}
+
+		.section h3 span.l,
+		.section span.r {
+			/* width: 49%; */
+			float: left;
+		}
+
+		.section span.r {
+			float: right;
+			text-align: right;
+		}
+
+		.section-education .school,
+		.section-work .job_title {
+			font-size: 100%;
+			/* display: block; */
+			margin: 5px 0 5px 0;
+		}
+
+		/* ___ photo ___ */
+		#photo {
+			width: 100px;
+			height: 100px;
+			margin-right: 30px;
+			overflow: hidden;
+			float: left;
+			border-radius: 100%;
+			vertical-align: middle;
+		}
+
+		#photo img {
+			width: 100%;
+			height: auto;
+			display: inline-block;
+		}
+
+		.header-main {
+			display: flex;
+			justify-content: center;
+			/* border-bottom: 6px solid #222; */
+		}
+
+		.header {
+			/* border-top: 6px solid #222; */
+			padding-top: 15px;
+			margin-bottom: 25px;
+		}
+
+		.header.photo {
+			float: left;
+		}
+
+		.header.photo #title {
+			text-align: left;
+		}
+
+		.place {
+			font-weight: 400;
+		}
+
+		.date {
+			font-size: 16px;
+		}
+
+		@media screen and (max-width: 950px) {
+			body {
+				background: #fff;
+			}
+
+			#main {
+				box-shadow: none;
+				padding: 0;
+				padding: 5px;
+			}
+		}
+
+		#qr-wrapper {
+			margin-left: 80px;
+			display: none;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		@media print {
+			#main {
+				padding: 0;
+				margin: 0;
+			}
+			.no-print {
+				display: none;
+			}
+			#qr-wrapper {
+				display: flex;
+			}
+		}
+	</style>
+</head>
+
+<body class="lang-en ">
+
+	<div id="main">
+		<div class="header-main">
+			<div id="photo">
+				<img src="53_square.jpg" alt="" />
+			</div>
+			<div class="header photo">
+				<h1 id="title">
+					Ashish Ranjan 
+					<span class="email" style="margin-left: 35px;">
+						<a href="https://www.linkedin.com/in/ashish-ranjan-9ba682a6" target="_blank"><span class="link fa fa-linkedin"></span></a>
+						<a href="https://stackoverflow.com/users/6518605" rel="nofollow" target="_blank"><span class="link fa fa-stack-overflow"></span></a>
+						<a href="https://github.com/r-ashish" rel="nofollow" target="_blank"><span class="link fa fa-github"></span></a>
+					</span><br>
+					<span class="email fa fa-envelope"></span>
+					<span class="email"><a href="mailto:ashishranjan2912@gmail.com">ashishranjan2912@gmail.com</a></span>
+					<span class="email fa fa-phone" style="margin-left: 10px;"></span>
+					<span class="email phone"><small>+65-82658358</small></span>
+				</h1>
+			</div>
+			<div id="qr-wrapper">
+				<a href="https://r-ashish.github.io/cv" target="_blank">
+					<img src="qr.png" alt="" height="80px" width="80px" />
+				</a>
+				<p style="line-height: 0.2;"><small><small>View detailed CV</small></small></p>
+				<!-- <p><small><a href="https://r-ashish.github.io/cv">r-ashish.github.io/cv</a></small></p> -->
+			</div>
+		</div>
+
+		<div class="section section-education">
+			<h2 class="title">Education</h2>
+			<div class="set">
+				<div class="item">
+					<h3><span class="course l">Bachelor of Technology - IIT Delhi</span>
+						<span class="date r">2013 &mdash; 2017</span>
+					</h3>
+					<div class="clear"> </div>
+					<p class="sub"><span class="school"></span></p>
+					<div class="info">B.Tech. in Textile Technology from Indian Institute of Technology, Delhi | CGPA: 6
+					</div><span class="clear"> </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="section section-work">
+			<h2 class="title">Work Experience</h2>
+			<div class="set">
+				<div class="item">
+					<h3>
+						<span class="company l">Senior Software Engineer, Fullstack - Grab</span>
+						<span class="date r">Aug 2020 &mdash; Present</span>
+					</h3>
+					<div class="clear"> </div>
+					<p class="sub">
+						<span class="job_title">Software Engineer, Fullstack (Aug 2020 - Feb 2022)</span>
+						<span class="place r">Singapore</span>
+					</p>
+					<div class="info">
+						<ul>
+							<li> Improving developer productivity at Grab as a part of the Developer Experience team.</li>
+							<li> Working on several in-house tools, libraries, frameworks including:</li>
+								<ul>
+									<li> Standardised framework for building gRPC, HTTP based go microservices.</li>
+									<li> Dynamic configuration management system for services.</li>
+									<li> Service discovery client libraries supporting etcd, consul.</li>
+									<li> Monitoring as code, automated dashboarding.</li>
+									<li> Automated service creation including code scaffaolding, infra etc.</li>
+									<li> Logging, resiliency libs and several other common libraries.</li>
+								</ul>
+							<li> Contributed to open source projects by submitting multiple bug fixes, improvements.</li>
+							<li> Tech stack: Golang, Reactjs, AWS, Terraform, Etcd, Consul, Redis, Docker, Jenkins, Spinnaker.</li>
+						</ul>
+					</div>
+					<div class="clear"> </div>
+				</div>
+				<div class="item">
+					<h3>
+						<span class="company l">Software Engineer</span>
+						<span class="date r">Jan 2019 &mdash; Apr 2020</span>
+					</h3>
+					<div class="clear"> </div>
+					<p class="sub">
+						<span class="job_title">Evie.ai</span>
+						<span class="place r">Singapore</span>
+					</p>
+					<div class="info">
+						<ul>
+							<li>Worked on building and improving Evie's metaflow engine including core nlp components as well as the workflows.
+							</li>
+							<li>Built new workflows and decision-making algorithms for
+								Evie.</li>
+							<li>Integrated several web and enterprise services via APIs - Office365,
+								Outlook, Google.</li>
+							<li>Developed an Outlook plugin from scratch using ReactJs to improve usability.</li>
+							<li>Fastened the build and deployment process.</li>
+							<li>Tech-stack: Python/ Django, Ruby on Rails, ReactJs, Docker, Terraform, AWS, PostgreSQL.</li>
+						</ul>
+					</div>
+					<div class="clear"> </div>
+				</div>
+				<div class="item">
+					<h3>
+						<span class="company l">Full Stack Developer</span>
+						<span class="date r">May 2017 &mdash; Jan 2019</span>
+					</h3>
+					<div class="clear"> </div>
+					<p class="sub">
+						<span class="job_title">ScrumDo</span>
+						<span class="place r">New Delhi</span>
+					</p>
+					<div class="info">
+						<ul>
+							<li>Worked on end-to-end functionalities (backend, frontend, db) to add new features, fixes.</li>
+							<li>Database tuning, query and performance optimization.</li>
+							<li>Maintain database indices on Elasticsearch for efficient querying and
+								searching.</li>
+							<li>Used Pubnub to implement realtime chat, updates.</li>
+							<li>Mentored junior developers on analysis and development of features.</li>
+							<li>Wrote scripts for continuous integration (CI), testing and deployment.</li>
+							<li>Tech-stack: Python/ Django, AngularJs, MySql, Docker, Redis, Elasticsearch, Celery.</li>
+						</ul>
+					</div>
+					<div class="clear"> </div>
+				</div>
+
+				<div class="item no-print">
+					<h3><span class="company l">Software Development Intern</span>
+						<span class="date r">May 2016 &mdash; July 2016</span>
+					</h3>
+					<div class="clear"> </div>
+					<p class="sub">
+						<span class="job_title">SmartPrix Web Pvt. Ltd.</span>
+						<span class="place r">New Delhi</span>
+					</p>
+					<div class="info">
+						<ul>
+							<li>Implemented a background service to collect analytics from the website in
+								Node.js.</li>
+							<li>Indexed the data on Elasticsearch for faster searching. </li>
+							<li>Integrated Kibana for better visualization of the indexed data.</li>
+						</ul>
+					</div>
+					<div class="clear"> </div>
+				</div>
+
+				<div class="item no-print">
+					<h3>
+						<span class="company l">Android Developer Intern</span>
+						<span class="date r">Dec 2015 &mdash; Jan 2016</span>
+					</h3>
+					<div class="clear"> </div>
+					<p class="sub">
+						<span class="job_title">Visit Internet Services Pvt. Ltd.</span>
+						<span class="place r">New Delhi</span>
+					</p>
+					<div class="info">
+						<ul>
+							<li>Used Pubnub to implement realtime chat, Tokbox to
+								implement video/voice call.</li>
+							<li>Integrated Paytm sdk for inapp payment, other OSS libs for networking, push
+								notifications etc. like OkHttp, GCM.</li>
+							<li>Experience of working in a startup environment with the
+								core team.</li>
+						</ul>
+					</div>
+					<div class="clear"> </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section section-interests">
+			<h2 class="title">Technical Skills</h2>
+			<div class="set">
+				<div class="item">
+					<span class="info">
+						<ul>
+							<li>Golang, Python, Django, Ruby on Rails, Node.js, Java, SQL, MongoDB, Etcd, Redis, Consul.</li>
+							<li>ReactJs, Angular/ AngularJs, TypeScript, HTML, CSS, JavaScript, jQuery.</li>
+							<li>Docker, Terraform, AWS, Elasticsearch, Android dev, Git, Jenkins, Spinnaker.</li>
+						</ul>
+					</span>
+				</div>
+			</div>
+			<div class="clear"> </div>
+		</div>
+
+		<div class="section section-interests no-print">
+			<h2 class="title">Other Achievements</h2>
+			<div class="set">
+				<div class="item">
+					<span class="info">
+						<p><span style="font-weight:700;">Invitation to Rashtrapati Bhavan
+							</span><span>: </span></p>
+						<p><span>First prize in IMPRINT National article writing competition organized
+								by </span><span style="font-weight:700;">MHRD </span><span>in the domain
+							</span><span style="font-weight:700;">Computer Sc. &amp; ICT </span><span>at
+								Rashtrapati Bhavan in the presence of Hon'ble </span><span
+								style="font-weight:700;">President of India </span><span>and PM. </span>
+						</p>
+					</span>
+				</div>
+			</div>
+			<div class="clear"> </div>
+		</div>
+	</div>
+</body>
+</html>
